@@ -1,0 +1,23 @@
+@model DemoMVC304.Models.Student
+
+@{
+    ViewData["Title"] = "Nhập thông tin sinh viên";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Create" method="post">
+    <label>Mã sinh viên:</label>
+    <input type="number" asp-for="Id" required /><br /><br />
+
+    <label>Họ tên:</label>
+    <input type="text" asp-for="FullName" required /><br /><br />
+
+    <label>Tuổi:</label>
+    <input type="number" asp-for="Age" required /><br /><br />
+
+    <label>Ngành học:</label>
+    <input type="text" asp-for="Major" required /><br /><br />
+
+    <button type="submit">Gửi dữ liệu</button>
+</form>

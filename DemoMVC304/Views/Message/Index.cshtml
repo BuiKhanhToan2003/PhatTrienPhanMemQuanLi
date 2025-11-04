@@ -1,0 +1,11 @@
+@{
+    ViewData["Title"] = "Demo ViewBag & ViewData";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p><b>ViewBag:</b> @ViewBag.Greeting</p>
+<p><b>ViewData:</b> @ViewData["Note"]</p>
+
+<br />
+<a href="/Message/SendTempData">→ Gửi dữ liệu bằng TempData (chuyển hướng)</a>

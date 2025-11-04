@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Gửi và nhận dữ liệu giữa Controller và View";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>@ViewBag.Message</p>
+
+<form method="post" asp-action="Index">
+    <label>Nhập họ tên:</label>
+    <input type="text" name="fullName" required />
+    <button type="submit">Gửi</button>
+</form>

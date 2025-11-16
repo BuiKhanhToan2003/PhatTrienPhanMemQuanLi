@@ -4,7 +4,6 @@ namespace DemoMVC304.Controllers
 {
     public class DataController : Controller
     {
-        // Gửi dữ liệu sang View
         [HttpGet]
         public IActionResult Index()
         {
@@ -12,7 +11,6 @@ namespace DemoMVC304.Controllers
             return View();
         }
 
-        // Nhận dữ liệu từ form gửi lên
         [HttpPost]
         public IActionResult Index(string fullName)
         {
